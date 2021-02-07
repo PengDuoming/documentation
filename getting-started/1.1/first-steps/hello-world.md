@@ -78,7 +78,7 @@ In this step, you create a zero-value transaction that contains a "Hello world" 
 6. Send your transaction to the node
 
     ```js
-   Iota.prepareTransfers(seed, transfers)
+   iota.prepareTransfers(seed, transfers)
         .then(trytes => {
             return iota.sendTrytes(trytes, depth, minimumWeightMagnitude);
         })
